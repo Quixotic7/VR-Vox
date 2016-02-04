@@ -52,6 +52,8 @@ namespace VRVox
 
 		public bool replaceBlocksWhileDrawing = true;
 
+	    public bool mouseLeftRightSwitchesAddAndSubtract = false; // Use this for PC if using a two button mouse
+
 		public float RayCastDistance = 50f;
 
 		public float ActivateDrawTime = 0.2f;
@@ -435,31 +437,36 @@ namespace VRVox
 				//interactionMode = VoxInteractionMode.AddBlocks;
 				AddMode = true;
 			}
+
 			if (Input.GetButtonDown(VoxInput.leftShoulder))
 			{
 				clickDown = true;
-				//interactionMode = VoxInteractionMode.SubtractBlocks;
-				AddMode = false;
+                //interactionMode = VoxInteractionMode.SubtractBlocks;
+
+                AddMode = false;
 			}
 			if (VoxInput.GetSelectDown())
 			{
 				clickDown = true;
 			}
 
-			if (Input.GetMouseButtonDown(0))
-			{
-				clickDown = true;
-				//interactionMode = VoxInteractionMode.SubtractBlocks;
-				AddMode = true;
-			}
-			if (Input.GetMouseButtonDown(1))
-			{
-				clickDown = true;
-				//interactionMode = VoxInteractionMode.SubtractBlocks;
-				AddMode = false;
-			}
+		    if (mouseLeftRightSwitchesAddAndSubtract)
+		    {
+		        if (Input.GetMouseButtonDown(0))
+		        {
+		            clickDown = true;
+		            //interactionMode = VoxInteractionMode.SubtractBlocks;
+		            AddMode = true;
+		        }
+		        if (Input.GetMouseButtonDown(1))
+		        {
+		            clickDown = true;
+		            //interactionMode = VoxInteractionMode.SubtractBlocks;
+		            AddMode = false;
+		        }
+		    }
 
-			if (Input.GetMouseButton(1))
+		    if (Input.GetMouseButton(1))
 			{
 				click = true;
 			}

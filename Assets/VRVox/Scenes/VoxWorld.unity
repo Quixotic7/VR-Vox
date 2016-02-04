@@ -848,6 +848,7 @@ MonoBehaviour:
   Crosshair: {fileID: 3164746}
   VoxWorld: {fileID: 1781286075}
   replaceBlocksWhileDrawing: 1
+  mouseLeftRightSwitchesAddAndSubtract: 0
   RayCastDistance: 20
   ActivateDrawTime: .100000001
   NewBlockColor: {r: .274134964, g: 0, b: .411202431, a: 1}
@@ -8982,7 +8983,7 @@ Transform:
   m_LocalScale: {x: 1.98000002, y: 2.76999998, z: 1.98000002}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1 &1365896875
 GameObject:
   m_ObjectHideFlags: 0

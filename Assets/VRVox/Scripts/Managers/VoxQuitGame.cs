@@ -42,9 +42,11 @@ namespace VRVox
 		{
 			
 #if UNITY_ANDROID && !UNITY_EDITOR
-		Debug.Log("[PlatformUI-ConfirmQuit] Showing @ " + Time.time);
-		OVRManager.PlatformUIConfirmQuit();
-		platformUIStarted = true;
+
+        // TODO : Switched to Unity Built-in VR, Application.Quit should work, but it might not. 
+//		Debug.Log("[PlatformUI-ConfirmQuit] Showing @ " + Time.time);
+//		OVRManager.PlatformUIConfirmQuit();
+//		platformUIStarted = true;
 #endif
 
 			Application.Quit();
@@ -56,13 +58,15 @@ namespace VRVox
 		private void ShowGlobalMenu()
 		{
 #if UNITY_ANDROID && !UNITY_EDITOR
-		Debug.Log("[PlatformUI-Global] Showing @ " + Time.time);
-		OVRManager.PlatformUIGlobalMenu();
-		platformUIStarted = true;
-#endif
-		}
+        // TODO : Switched to Unity Built-in VR, not sure how to bring up the global menu here
 
-		protected bool CanHoldBack = false;
+//		Debug.Log("[PlatformUI-Global] Showing @ " + Time.time);
+//		OVRManager.PlatformUIGlobalMenu();
+//		platformUIStarted = true;
+#endif
+        }
+
+        protected bool CanHoldBack = false;
 
 		void Update()
 		{
