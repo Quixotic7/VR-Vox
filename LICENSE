@@ -1,4 +1,18 @@
-                                 Apache License
+Certain portions of this code were based on AlexStv's voxel engine and are subject to the below license
+
+			http://alexstv.com/index.php/posts/unity-voxel-tutorial-licencing
+
+             I've been asked about how this tutorial is licensed, first of all the textures used are free for non-commercial use. So use them all you want for development, don't use them if you're planning on monetizing your game.
+			The code in the tutorial is different. You can monetize any product using code in the tutorial but you cannot sell or monetize the code as a voxel framework without clearly referencing this tutorial as a resource.
+			So if you make a game or anything where you release a compiled product you can do whatever you want with the code. I would love to hear about your game and if you feel like mentioning the tutorial to other developers or in your game I would be super happy!
+			About frameworks, I am hesitant to allow any use of the non-compiled code because I don't want this project to show up on the asset store as a voxel game framework for a price. However if you make significant changes and clearly reference this tutorial (as long as the site is still up) so that anyone who wants to can visit this site instead I'll allow it. That means that if you put something on the asset store with the code from this tutorial in it there should be text in the description explaining that the product is based on or contains code from the free voxel tutorial on AlexSTV.com.
+			So quick recap, the textures are free for non commercial use. The code can be used in games and compiled projects for commercial use and the non-compiled code can only be redistributed commercially or non-commercially with a clear reference to this project as the source of some of the code.      
+											 
+								 
+								 
+								 
+								 
+								 Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
